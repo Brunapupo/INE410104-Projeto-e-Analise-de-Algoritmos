@@ -1,0 +1,5 @@
+busca-linear(A, v)
+    for i = 1 to comprimento(A)
+        if A[i] = v
+            return i
+    return NIL
