@@ -74,8 +74,9 @@ def dijkstra_basico(
     while vertice is not None:
         caminho.append(vertice)
         vertice = anterior[vertice]
-    caminho.reverse()
-
+    #inverte a ordem dos elementos da lista/caminho. No algoritmo a reconstrução da rota, começa do dentido e vai voltando até a origem.
+    caminho.reverse() 
+    
     return caminho, distancia[destino]
 
 origem = input("Digite a localidade de origem (ex: c3): ")
